@@ -16,7 +16,7 @@ function EditSet({ sets, setSets }) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        fetch(`http://localhost:9292/room_sets/${id}`, {
+        fetch(`http://localhost:4567/room_sets/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
