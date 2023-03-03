@@ -14,7 +14,7 @@ function NewRoom({ rooms, setRooms, sets, setSets }) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        fetch(`http://localhost:4567/room_sets/${roomSetId}/rooms`, {
+        fetch(`http://localhost:4566/room_sets/${roomSetId}/rooms`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

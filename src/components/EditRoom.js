@@ -19,7 +19,7 @@ function EditRoom({ rooms, setRooms, sets, setSets }) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        fetch(`http://localhost:4567/rooms/${id}`, {
+        fetch(`http://localhost:4566/rooms/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

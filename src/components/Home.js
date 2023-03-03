@@ -5,7 +5,7 @@ function Home() {
     const [ newMinis, setNewMinis ] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:4567/rooms/new')
+        fetch('http://localhost:4566/rooms/new')
         .then(res => res.json())
         .then(data => setNewMinis(data))
       }, [])
