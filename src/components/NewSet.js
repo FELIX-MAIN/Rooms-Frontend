@@ -10,7 +10,7 @@ function NewSet({ sets, setSets }) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        fetch("http://localhost:9292/room_sets", {
+        fetch("http://localhost:4567/room_sets", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
