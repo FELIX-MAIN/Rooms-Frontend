@@ -6,13 +6,6 @@ function SetPage({ sets, setSets, rooms, setRooms }) {
     const navigate = useNavigate();
     const { id } = useParams();
     const set = sets.find(set => set.id===parseInt(id))
-    // const [ set, setSet ] = useState([]);
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:9292/miniature_sets/${id}`)
-    //     .then(res => res.json())
-    //     .then(data => setSet(data))
-    // }, [])
     
     const roomCards = set?.rooms?.map((room, index)  => <RoomCard key={ index } room={ room }/>)
 
@@ -32,7 +25,7 @@ function SetPage({ sets, setSets, rooms, setRooms }) {
     <div className="set-page">
         <h2>{ set?.name }</h2>
         <h3>Open Date: { set?.year }</h3>
-        <Link to={`/sets/${id}/rooms/new`}>
+        <Link to = {`/sets/${id}/rooms/new`}>
             <button className="form-link" >Add Room</button>
         </Link>
         <Link to={`/sets/${id}/edit`}>
