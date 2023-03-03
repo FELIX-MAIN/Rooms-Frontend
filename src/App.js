@@ -17,13 +17,13 @@ function App() {
   const [ rooms, setRooms ] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:9292/room_sets')
+        fetch('http://localhost:4567/room_sets')
         .then(res => res.json())
         .then(data => setSets(data))
       }, [])
 
     useEffect(() => {
-        fetch('http://localhost:9292/rooms')
+        fetch('http://localhost:4567/rooms')
         .then(res => res.json())
         .then(data => setRooms(data))
       }, [])

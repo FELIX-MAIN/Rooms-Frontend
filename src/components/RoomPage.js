@@ -8,7 +8,7 @@ function RoomPage({ miniatures: rooms, setMiniatures, sets, setSets }) {
     const set = sets.find(s => s.id===parseInt(room?.room_set_id))
 
     const handleDelete = () => {
-        fetch(`http://localhost:9292/rooms/${id}`, 
+        fetch(`http://localhost:4567/rooms/${id}`, 
             { method: "DELETE" })
         .then(() => removeRoom(id))
         .then(() => navigate(`/sets/${room.room_set_id}`));

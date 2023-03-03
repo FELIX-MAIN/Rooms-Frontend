@@ -17,7 +17,7 @@ function SetPage({ sets, setSets, rooms, setRooms }) {
     const roomCards = set?.rooms?.map((room, index)  => <RoomCard key={ index } room={ room }/>)
 
     const handleDelete = () => {
-        fetch(`http://localhost:9292/room_sets/${id}`, 
+        fetch(`http://localhost:4567/room_sets/${id}`, 
             { method: "DELETE" })
         .then(() => removeSet(id))
         .then(() => navigate("/sets"));
