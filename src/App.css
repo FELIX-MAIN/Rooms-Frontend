@@ -5,13 +5,13 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
-  background-color: #fff;
+  background-color: #10eae3;
   color: #222;
 }
 
 nav {
   font-size: 1.2rem;
-  background-color: rgb(109, 17, 17);
+  background-color: rgb(51, 41, 190);
   color: #fff;
   text-align: center;
   padding-bottom: .75rem;
@@ -192,7 +192,7 @@ nav a:hover {
   margin-top: 2rem;
   max-width: 125px;
   padding: .225rem;
-  background-color: white;
+  background-color: rgb(11, 231, 29);
 }
 
 .form-btn:hover, .form-btn:focus {
